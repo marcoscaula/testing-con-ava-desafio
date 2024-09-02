@@ -16,6 +16,9 @@ class User {
   addProduct(newProduct: Product) {
     this.products.push(newProduct);
   }
+  getProduct(producto: Product):Product{
+    return this.products.find(p => p === producto);
+  }
 }
 
 export { User, Product };
